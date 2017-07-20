@@ -12,6 +12,7 @@
 		157B52A41F2116C90087C0D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 157B52A31F2116C90087C0D5 /* Assets.xcassets */; };
 		157B52A71F2116C90087C0D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 157B52A51F2116C90087C0D5 /* LaunchScreen.storyboard */; };
 		157B52AF1F2120A70087C0D5 /* WorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157B52AE1F2120A70087C0D5 /* WorkoutsViewController.swift */; };
+		157B52B11F2121EB0087C0D5 /* WorkoutCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157B52B01F2121EB0087C0D5 /* WorkoutCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +22,8 @@
 		157B52A31F2116C90087C0D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		157B52A61F2116C90087C0D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		157B52A81F2116C90087C0D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		157B52AE1F2120A70087C0D5 /* WorkoutsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutsViewController.swift; sourceTree = "<group>"; };
+		157B52AE1F2120A70087C0D5 /* WorkoutsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkoutsViewController.swift; path = ../WorkoutsViewController.swift; sourceTree = "<group>"; };
+		157B52B01F2121EB0087C0D5 /* WorkoutCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +40,6 @@
 		157B52901F2116C90087C0D5 = {
 			isa = PBXGroup;
 			children = (
-				157B52AE1F2120A70087C0D5 /* WorkoutsViewController.swift */,
 				157B529B1F2116C90087C0D5 /* Gif Workout */,
 				157B529A1F2116C90087C0D5 /* Products */,
 			);
@@ -56,6 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				157B529C1F2116C90087C0D5 /* AppDelegate.swift */,
+				157B52B01F2121EB0087C0D5 /* WorkoutCollectionViewCell.swift */,
+				157B52AE1F2120A70087C0D5 /* WorkoutsViewController.swift */,
 				157B52A01F2116C90087C0D5 /* Main.storyboard */,
 				157B52A31F2116C90087C0D5 /* Assets.xcassets */,
 				157B52A51F2116C90087C0D5 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			files = (
 				157B52AF1F2120A70087C0D5 /* WorkoutsViewController.swift in Sources */,
 				157B529D1F2116C90087C0D5 /* AppDelegate.swift in Sources */,
+				157B52B11F2121EB0087C0D5 /* WorkoutCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Workouts View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Gif_Workout" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WorkoutsViewController" customModule="Gif_Workout" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -32,11 +32,11 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="6B4-O5-H5w">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Workout Cell" id="6B4-O5-H5w" customClass="WorkoutCollectionViewCell" customModule="Gif_Workout" customModuleProvider="target">
                                         <rect key="frame" x="1.5" y="0.0" width="372" height="136"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="373" height="136"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="372" height="136"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4TV-CI-aIH">
@@ -58,17 +58,28 @@
                                             <constraint firstItem="4TV-CI-aIH" firstAttribute="leading" secondItem="6B4-O5-H5w" secondAttribute="leading" id="kHP-hC-NIB"/>
                                             <constraint firstItem="4TV-CI-aIH" firstAttribute="top" secondItem="6B4-O5-H5w" secondAttribute="top" id="mdF-gn-cHd"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="workoutImageBG" destination="4TV-CI-aIH" id="x2o-ci-8QH"/>
+                                            <outlet property="workoutNameLabel" destination="2l4-x4-t1z" id="9El-Gd-Dow"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="zBt-OR-Ssc"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="5yP-Ry-hDF"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="C3m-pu-2fa"/>
+                    <connections>
+                        <outlet property="workoutsCollectionView" destination="hr5-6A-QF5" id="kCd-xe-QM8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="138.98050974512745"/>
+            <point key="canvasLocation" x="937" y="139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RQu-m6-TxB">
