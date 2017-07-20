@@ -13,7 +13,7 @@
 		157B52A71F2116C90087C0D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 157B52A51F2116C90087C0D5 /* LaunchScreen.storyboard */; };
 		157B52AF1F2120A70087C0D5 /* WorkoutsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157B52AE1F2120A70087C0D5 /* WorkoutsViewController.swift */; };
 		157B52B11F2121EB0087C0D5 /* WorkoutCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157B52B01F2121EB0087C0D5 /* WorkoutCollectionViewCell.swift */; };
-		157B52B51F2123F20087C0D5 /* WorkoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157B52B21F2123F20087C0D5 /* WorkoutController.swift */; };
+		157B52B51F2123F20087C0D5 /* ExerciseSets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157B52B21F2123F20087C0D5 /* ExerciseSets.swift */; };
 		157B52B71F2123F20087C0D5 /* Workouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157B52B41F2123F20087C0D5 /* Workouts.swift */; };
 		157B52BC1F2124640087C0D5 /* Exercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157B52BA1F2124640087C0D5 /* Exercises.swift */; };
 		157B52BD1F2124640087C0D5 /* Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157B52BB1F2124640087C0D5 /* Gif.swift */; };
@@ -27,6 +27,7 @@
 		157B52D01F2124B60087C0D5 /* slider_knee_tucks.gif in Resources */ = {isa = PBXBuildFile; fileRef = 157B52C61F2124B60087C0D5 /* slider_knee_tucks.gif */; };
 		157B52D11F2124B60087C0D5 /* slider_pikes.gif in Resources */ = {isa = PBXBuildFile; fileRef = 157B52C71F2124B60087C0D5 /* slider_pikes.gif */; };
 		157B52D21F2124B60087C0D5 /* straight_leg_raise.gif in Resources */ = {isa = PBXBuildFile; fileRef = 157B52C81F2124B60087C0D5 /* straight_leg_raise.gif */; };
+		157B52D41F21293E0087C0D5 /* WorkoutsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157B52D31F21293E0087C0D5 /* WorkoutsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +39,7 @@
 		157B52A81F2116C90087C0D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		157B52AE1F2120A70087C0D5 /* WorkoutsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkoutsViewController.swift; path = ../WorkoutsViewController.swift; sourceTree = "<group>"; };
 		157B52B01F2121EB0087C0D5 /* WorkoutCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutCollectionViewCell.swift; sourceTree = "<group>"; };
-		157B52B21F2123F20087C0D5 /* WorkoutController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutController.swift; sourceTree = "<group>"; };
+		157B52B21F2123F20087C0D5 /* ExerciseSets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseSets.swift; sourceTree = "<group>"; };
 		157B52B41F2123F20087C0D5 /* Workouts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Workouts.swift; sourceTree = "<group>"; };
 		157B52BA1F2124640087C0D5 /* Exercises.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercises.swift; sourceTree = "<group>"; };
 		157B52BB1F2124640087C0D5 /* Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gif.swift; sourceTree = "<group>"; };
@@ -52,6 +53,7 @@
 		157B52C61F2124B60087C0D5 /* slider_knee_tucks.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = slider_knee_tucks.gif; sourceTree = "<group>"; };
 		157B52C71F2124B60087C0D5 /* slider_pikes.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = slider_pikes.gif; sourceTree = "<group>"; };
 		157B52C81F2124B60087C0D5 /* straight_leg_raise.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = straight_leg_raise.gif; sourceTree = "<group>"; };
+		157B52D31F21293E0087C0D5 /* WorkoutsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +105,8 @@
 				157B52BB1F2124640087C0D5 /* Gif.swift */,
 				157B52BA1F2124640087C0D5 /* Exercises.swift */,
 				157B52B41F2123F20087C0D5 /* Workouts.swift */,
-				157B52B21F2123F20087C0D5 /* WorkoutController.swift */,
+				157B52D31F21293E0087C0D5 /* WorkoutsController.swift */,
+				157B52B21F2123F20087C0D5 /* ExerciseSets.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -210,10 +213,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				157B52AF1F2120A70087C0D5 /* WorkoutsViewController.swift in Sources */,
-				157B52B51F2123F20087C0D5 /* WorkoutController.swift in Sources */,
+				157B52B51F2123F20087C0D5 /* ExerciseSets.swift in Sources */,
 				157B52BD1F2124640087C0D5 /* Gif.swift in Sources */,
 				157B529D1F2116C90087C0D5 /* AppDelegate.swift in Sources */,
 				157B52BC1F2124640087C0D5 /* Exercises.swift in Sources */,
+				157B52D41F21293E0087C0D5 /* WorkoutsController.swift in Sources */,
 				157B52B11F2121EB0087C0D5 /* WorkoutCollectionViewCell.swift in Sources */,
 				157B52B71F2123F20087C0D5 /* Workouts.swift in Sources */,
 			);

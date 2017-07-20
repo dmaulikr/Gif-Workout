@@ -15,4 +15,12 @@ struct Workout {
     let exercises: [Exercise]
 }
 
-let testWorkout = Workout(title: "Test Workout", description: "This is a description of the test workout", gifName: "roll_up", exercises: testWorkoutExercises)
+let workoutOne = Workout(title: "Workout One", description: "This is a description of the test workout", gifName: "roll_up", exercises: exerciseSetOne)
+
+let workoutTwo = Workout(title: "Workout Two", description: "This is a description of the test workout", gifName: "heel_taps", exercises: exerciseSetTwo)
+
+let workoutThree = Workout(title: "Workout Three", description: "This is a description of the test workout", gifName: "slider_pikes", exercises: exerciseSetThree)
+
+let workoutFour = Workout(title: "Workout Four", description: "This is a description of the test workout", gifName: "jack_knife", exercises: exerciseSetFour)
+
+let workoutFive = Workout(title: "Workout Five", description: "This is a description of the test workout", gifName: "scissors", exercises: exerciseSetFive)

@@ -20,14 +20,14 @@ class WorkoutsViewController: UIViewController, UICollectionViewDelegate, UIColl
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return workouts.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! WorkoutCollectionViewCell
         
-        cell.workoutImageBG.loadGif(name: "\(testWorkoutExercises[indexPath.row].gifName)")
-        cell.workoutNameLabel.text = testWorkoutExercises[indexPath.row].title.capitalized
+        cell.workoutImageBG.loadGif(name: "\(workouts[indexPath.row].gifName)")
+        cell.workoutNameLabel.text = workouts[indexPath.row].title.capitalized
         
         return cell
     }
