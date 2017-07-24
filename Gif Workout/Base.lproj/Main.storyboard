@@ -38,9 +38,13 @@
                                             <rect key="frame" x="0.0" y="0.0" width="355" height="136"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4TV-CI-aIH">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4TV-CI-aIH">
                                                     <rect key="frame" x="0.0" y="0.0" width="355" height="136"/>
                                                 </imageView>
+                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N6h-aU-8WY" userLabel="Darkening View">
+                                                    <rect key="frame" x="0.0" y="0.0" width="355" height="136"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Workout Name Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2l4-x4-t1z">
                                                     <rect key="frame" x="93" y="58" width="169.5" height="21"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -50,14 +54,17 @@
                                             </subviews>
                                         </view>
                                         <constraints>
+                                            <constraint firstItem="N6h-aU-8WY" firstAttribute="height" secondItem="4TV-CI-aIH" secondAttribute="height" id="6t0-Fc-4pN"/>
                                             <constraint firstItem="4TV-CI-aIH" firstAttribute="top" secondItem="6B4-O5-H5w" secondAttribute="top" id="CGM-Um-k80"/>
                                             <constraint firstAttribute="bottom" secondItem="4TV-CI-aIH" secondAttribute="bottom" id="cCL-Kq-a86"/>
                                             <constraint firstItem="4TV-CI-aIH" firstAttribute="leading" secondItem="6B4-O5-H5w" secondAttribute="leading" id="d3E-Nz-kLY"/>
                                             <constraint firstAttribute="trailing" secondItem="4TV-CI-aIH" secondAttribute="trailing" id="ebX-XN-bxf"/>
+                                            <constraint firstItem="N6h-aU-8WY" firstAttribute="width" secondItem="4TV-CI-aIH" secondAttribute="width" id="psf-xU-ldx"/>
                                             <constraint firstItem="2l4-x4-t1z" firstAttribute="centerX" secondItem="6B4-O5-H5w" secondAttribute="centerX" id="soa-ed-eGa"/>
                                             <constraint firstItem="2l4-x4-t1z" firstAttribute="centerY" secondItem="6B4-O5-H5w" secondAttribute="centerY" id="wbF-WR-mpe"/>
                                         </constraints>
                                         <connections>
+                                            <outlet property="darkeningView" destination="N6h-aU-8WY" id="FdE-b9-sxa"/>
                                             <outlet property="workoutImageBG" destination="4TV-CI-aIH" id="x2o-ci-8QH"/>
                                             <outlet property="workoutNameLabel" destination="2l4-x4-t1z" id="9El-Gd-Dow"/>
                                         </connections>

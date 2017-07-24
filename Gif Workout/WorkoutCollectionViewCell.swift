@@ -11,6 +11,7 @@ import UIKit
 class WorkoutCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var workoutImageBG: UIImageView!
+    @IBOutlet weak var darkeningView: UIView!
     @IBOutlet weak var workoutNameLabel: UILabel!
     
 }
