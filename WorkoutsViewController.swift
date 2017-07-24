@@ -30,7 +30,7 @@ class WorkoutsViewController: UIViewController, UICollectionViewDelegate, UIColl
         
 //        cell.workoutImageBG.loadGif(name: "\(workouts[indexPath.row].mainImage)")
         cell.workoutImageBG.image = workouts[indexPath.row].mainImage
-        cell.workoutNameLabel.text = workouts[indexPath.row].title.capitalized
+        cell.workoutNameLabel.text = workouts[indexPath.row].title.uppercased()
         
         return cell
     }
