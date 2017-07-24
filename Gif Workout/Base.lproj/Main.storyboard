@@ -69,6 +69,7 @@
                                             <outlet property="darkeningView" destination="N6h-aU-8WY" id="FdE-b9-sxa"/>
                                             <outlet property="workoutImageBG" destination="4TV-CI-aIH" id="x2o-ci-8QH"/>
                                             <outlet property="workoutNameLabel" destination="2l4-x4-t1z" id="9El-Gd-Dow"/>
+                                            <segue destination="ZKg-XI-QvD" kind="show" id="nqa-5D-ona"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -94,6 +95,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="936.79999999999995" y="138.98050974512745"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="QdC-yG-v7g">
+            <objects>
+                <viewController id="ZKg-XI-QvD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UyJ-Zd-PBL"/>
+                        <viewControllerLayoutGuide type="bottom" id="Yx2-yU-puv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CBg-9c-5hv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hSz-hB-kBt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1754" y="144"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RQu-m6-TxB">

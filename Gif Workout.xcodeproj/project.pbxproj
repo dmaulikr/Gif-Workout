@@ -28,6 +28,7 @@
 		157B52D11F2124B60087C0D5 /* slider_pikes.gif in Resources */ = {isa = PBXBuildFile; fileRef = 157B52C71F2124B60087C0D5 /* slider_pikes.gif */; };
 		157B52D21F2124B60087C0D5 /* straight_leg_raise.gif in Resources */ = {isa = PBXBuildFile; fileRef = 157B52C81F2124B60087C0D5 /* straight_leg_raise.gif */; };
 		157B52D41F21293E0087C0D5 /* WorkoutsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157B52D31F21293E0087C0D5 /* WorkoutsController.swift */; };
+		15AAAF401F269FBC000C8773 /* WorkoutDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15AAAF3F1F269FBC000C8773 /* WorkoutDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		157B52C71F2124B60087C0D5 /* slider_pikes.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = slider_pikes.gif; sourceTree = "<group>"; };
 		157B52C81F2124B60087C0D5 /* straight_leg_raise.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = straight_leg_raise.gif; sourceTree = "<group>"; };
 		157B52D31F21293E0087C0D5 /* WorkoutsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutsController.swift; sourceTree = "<group>"; };
+		15AAAF3F1F269FBC000C8773 /* WorkoutDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				157B52B81F2123F90087C0D5 /* Model */,
 				157B52B01F2121EB0087C0D5 /* WorkoutCollectionViewCell.swift */,
 				157B52AE1F2120A70087C0D5 /* WorkoutsViewController.swift */,
+				15AAAF3F1F269FBC000C8773 /* WorkoutDetailsViewController.swift */,
 				157B52A01F2116C90087C0D5 /* Main.storyboard */,
 				157B52A31F2116C90087C0D5 /* Assets.xcassets */,
 				157B52BE1F2124B60087C0D5 /* gifs */,
@@ -219,6 +222,7 @@
 				157B52BC1F2124640087C0D5 /* Exercises.swift in Sources */,
 				157B52D41F21293E0087C0D5 /* WorkoutsController.swift in Sources */,
 				157B52B11F2121EB0087C0D5 /* WorkoutCollectionViewCell.swift in Sources */,
+				15AAAF401F269FBC000C8773 /* WorkoutDetailsViewController.swift in Sources */,
 				157B52B71F2123F20087C0D5 /* Workouts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,6 +391,7 @@
 				157B52AD1F2116C90087C0D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
