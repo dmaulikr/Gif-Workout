@@ -26,7 +26,8 @@ class WorkoutsViewController: UIViewController, UICollectionViewDelegate, UIColl
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! WorkoutCollectionViewCell
         
-        cell.workoutImageBG.loadGif(name: "\(workouts[indexPath.row].gifName)")
+//        cell.workoutImageBG.loadGif(name: "\(workouts[indexPath.row].mainImage)")
+        cell.workoutImageBG.image = workouts[indexPath.row].mainImage
         cell.workoutNameLabel.text = workouts[indexPath.row].title.capitalized
         
         return cell
