@@ -8,8 +8,8 @@
 
 import Foundation
 
-let exerciseSetOne: [Exercise] = [heelTap, mountainClimber, scissor, sliderPike]
-let exerciseSetTwo: [Exercise] = [heelTap, mountainClimber, scissor, sliderPike]
+let exerciseSetOne: [Exercise] = [sliderPike, heelTap, mountainClimber, scissor, sliderPike]
+let exerciseSetTwo: [Exercise] = [straightLegRaise, heelTap, mountainClimber, scissor, sliderPike]
 let exerciseSetThree: [Exercise] = [heelTap, mountainClimber, scissor, sliderPike]
-let exerciseSetFour: [Exercise] = [heelTap, mountainClimber, scissor, sliderPike]
-let exerciseSetFive: [Exercise] = [heelTap, mountainClimber, scissor, sliderPike]
+let exerciseSetFour: [Exercise] = [rollUp, heelTap, mountainClimber, scissor, sliderPike]
+let exerciseSetFive: [Exercise] = [mountainClimber, heelTap, straightLegRaise , scissor, sliderPike]

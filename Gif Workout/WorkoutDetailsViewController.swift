@@ -10,7 +10,7 @@ import UIKit
 
 private let reuseIdentifier = "Exercises Preview Cell"
 
-class WorkoutDetailsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class WorkoutDetailsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,13 +18,38 @@ class WorkoutDetailsViewController: UIViewController, UICollectionViewDataSource
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 8
+        return 5
+        
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let screenSize = UIScreen.main.bounds.size.width
+        let divisor = (screenSize - 30) / 2
+        let numberOfCellsInRow = Double(screenSize / divisor)
+        let cellWidth = screenSize / CGFloat(numberOfCellsInRow)
+        
+        return CGSize(width: cellWidth, height: cellWidth)
+        
+    }
+    
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        
+//        let screenSize = UIScreen.main.bounds.size.width
+//        let divisor = (screenSize - 30) / 2
+//        let numberOfCellsInRow = Double(screenSize / divisor)
+//        let cellWidth = screenSize / CGFloat(numberOfCellsInRow)
+//        
+//        return CGSize(width: cellWidth, height: cellWidth)
+//        
+//    }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ExercisesPreviewCollectionViewCell
         
-        
+        cell.exercisesPreviewImageView.loadGif(name: "\(workouts[indexPath.row].exercises[indexPath.row].gifName)")
+
+        cell.exercisesPreviewTextLabel.text = "\(workouts[indexPath.row].exercises[indexPath.row].title)"
         
         return cell
     }
