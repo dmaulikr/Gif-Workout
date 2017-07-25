@@ -10,7 +10,7 @@ import UIKit
 
 private let reuseIdentifier = "Workout Cell"
 
-class WorkoutsViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class WorkoutsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
     @IBOutlet weak var workoutsCollectionView: UICollectionView!
     

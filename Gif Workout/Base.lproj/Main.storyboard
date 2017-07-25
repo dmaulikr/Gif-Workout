@@ -188,7 +188,7 @@
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="r2d-Ku-Dm0">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Exercises Preview Cell" id="r2d-Ku-Dm0" customClass="ExercisesPreviewCollectionViewCell" customModule="Gif_Workout" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -228,8 +228,16 @@
                                                     <constraint firstAttribute="bottom" secondItem="GxJ-te-Q0B" secondAttribute="bottom" id="w9s-4l-Jrs"/>
                                                     <constraint firstAttribute="trailing" secondItem="GxJ-te-Q0B" secondAttribute="trailing" id="wxz-eh-beS"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outlet property="exercisesPreviewImageView" destination="gHS-F7-UvJ" id="Tb4-x8-B2E"/>
+                                                    <outlet property="exercisesPreviewTextLabel" destination="rEw-Af-QdG" id="XQV-BR-3HP"/>
+                                                </connections>
                                             </collectionViewCell>
                                         </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="ZKg-XI-QvD" id="fGL-Ec-Ist"/>
+                                            <outlet property="delegate" destination="ZKg-XI-QvD" id="DTE-3l-hrp"/>
+                                        </connections>
                                     </collectionView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwV-eY-tcu">
                                         <rect key="frame" x="0.0" y="537" width="359" height="50"/>

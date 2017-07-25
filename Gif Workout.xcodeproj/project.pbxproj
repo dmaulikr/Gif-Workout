@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		154925DB1F27D2EF0093853C /* ExercisesPreviewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154925DA1F27D2EE0093853C /* ExercisesPreviewCollectionViewCell.swift */; };
 		157B529D1F2116C90087C0D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157B529C1F2116C90087C0D5 /* AppDelegate.swift */; };
 		157B52A21F2116C90087C0D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 157B52A01F2116C90087C0D5 /* Main.storyboard */; };
 		157B52A41F2116C90087C0D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 157B52A31F2116C90087C0D5 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		154925DA1F27D2EE0093853C /* ExercisesPreviewCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExercisesPreviewCollectionViewCell.swift; path = "gifs copy/ExercisesPreviewCollectionViewCell.swift"; sourceTree = "<group>"; };
 		157B52991F2116C90087C0D5 /* Gif Workout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gif Workout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		157B529C1F2116C90087C0D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		157B52A11F2116C90087C0D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				157B52B81F2123F90087C0D5 /* Model */,
 				157B52B01F2121EB0087C0D5 /* WorkoutCollectionViewCell.swift */,
 				157B52AE1F2120A70087C0D5 /* WorkoutsViewController.swift */,
+				154925DA1F27D2EE0093853C /* ExercisesPreviewCollectionViewCell.swift */,
 				15AAAF3F1F269FBC000C8773 /* WorkoutDetailsViewController.swift */,
 				157B52A01F2116C90087C0D5 /* Main.storyboard */,
 				157B52A31F2116C90087C0D5 /* Assets.xcassets */,
@@ -222,6 +225,7 @@
 				157B52BC1F2124640087C0D5 /* Exercises.swift in Sources */,
 				157B52D41F21293E0087C0D5 /* WorkoutsController.swift in Sources */,
 				157B52B11F2121EB0087C0D5 /* WorkoutCollectionViewCell.swift in Sources */,
+				154925DB1F27D2EF0093853C /* ExercisesPreviewCollectionViewCell.swift in Sources */,
 				15AAAF401F269FBC000C8773 /* WorkoutDetailsViewController.swift in Sources */,
 				157B52B71F2123F20087C0D5 /* Workouts.swift in Sources */,
 			);
