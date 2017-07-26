@@ -182,30 +182,30 @@
                                         <rect key="frame" x="0.0" y="142" width="359" height="384"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Fli-RS-pWJ">
-                                            <size key="itemSize" width="150" height="150"/>
+                                            <size key="itemSize" width="150" height="100"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Exercises Preview Cell" id="r2d-Ku-Dm0" customClass="ExercisesPreviewCollectionViewCell" customModule="Gif_Workout" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="100"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="100"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gHS-F7-UvJ">
-                                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="150" height="100"/>
                                                         </imageView>
                                                         <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GxJ-te-Q0B">
-                                                            <rect key="frame" x="0.0" y="129" width="150" height="21"/>
+                                                            <rect key="frame" x="0.0" y="78" width="150" height="22"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ptK-6F-3ZY">
-                                                                <rect key="frame" x="0.0" y="0.0" width="150" height="21"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="150" height="22"/>
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEw-Af-QdG">
-                                                                        <rect key="frame" x="4" y="0.0" width="142" height="21"/>
+                                                                        <rect key="frame" x="4" y="2" width="142" height="18"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
@@ -214,11 +214,12 @@
                                                                 <constraints>
                                                                     <constraint firstAttribute="trailing" secondItem="rEw-Af-QdG" secondAttribute="trailing" constant="4" id="7jl-wJ-p29"/>
                                                                     <constraint firstItem="rEw-Af-QdG" firstAttribute="leading" secondItem="ptK-6F-3ZY" secondAttribute="leading" constant="4" id="XdT-F5-Tij"/>
-                                                                    <constraint firstAttribute="bottom" secondItem="rEw-Af-QdG" secondAttribute="bottom" id="lOC-zx-qXi"/>
+                                                                    <constraint firstItem="rEw-Af-QdG" firstAttribute="top" secondItem="ptK-6F-3ZY" secondAttribute="top" constant="2" id="Z6l-Ah-kGl"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="rEw-Af-QdG" secondAttribute="bottom" constant="2" id="jiv-vd-Wag"/>
                                                                 </constraints>
                                                             </view>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="21" id="Rd2-W6-eff"/>
+                                                                <constraint firstAttribute="height" constant="22" id="Rd2-W6-eff"/>
                                                             </constraints>
                                                             <blurEffect style="light"/>
                                                         </visualEffectView>

@@ -25,24 +25,14 @@ class WorkoutDetailsViewController: UIViewController, UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         let screenSize = UIScreen.main.bounds.size.width
-        let divisor = (screenSize - 30) / 2
+        // Need to take into account the spacing to the right and left between whole view and content
+        let divisor = (screenSize - 40) / 2
         let numberOfCellsInRow = Double(screenSize / divisor)
         let cellWidth = screenSize / CGFloat(numberOfCellsInRow)
         
         return CGSize(width: cellWidth, height: cellWidth)
         
     }
-    
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        
-//        let screenSize = UIScreen.main.bounds.size.width
-//        let divisor = (screenSize - 30) / 2
-//        let numberOfCellsInRow = Double(screenSize / divisor)
-//        let cellWidth = screenSize / CGFloat(numberOfCellsInRow)
-//        
-//        return CGSize(width: cellWidth, height: cellWidth)
-//        
-//    }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ExercisesPreviewCollectionViewCell
