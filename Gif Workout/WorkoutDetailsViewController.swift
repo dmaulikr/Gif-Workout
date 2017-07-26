@@ -21,6 +21,8 @@ class WorkoutDetailsViewController: UIViewController, UICollectionViewDataSource
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = workoutSelected.title.uppercased()
+        
         timeLabel.text = "\(workoutSelected.timeInMinutes)"
         numberOfWorkoutsLabel.text = "\(workoutSelected.exercises.count)"
         workoutDescriptionLabel.text = workoutSelected.description

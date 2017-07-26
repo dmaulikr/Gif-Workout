@@ -39,6 +39,12 @@ class WorkoutsViewController: UIViewController, UICollectionViewDataSource, UICo
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+        // Clear the backup button text for next view
+        let backItem = UIBarButtonItem()
+        backItem.title = ""
+        navigationItem.backBarButtonItem = backItem
+        
+        // Pass selected workout to next view
         if segue.identifier == "Show Workout Details" {
             
             let workoutDetailsViewController = segue.destination as! WorkoutDetailsViewController
