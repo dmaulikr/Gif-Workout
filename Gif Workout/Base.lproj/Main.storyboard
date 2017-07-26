@@ -287,6 +287,11 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Jq1-6z-Veu" secondAttribute="trailing" constant="-8" id="srw-ne-JMk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="numberOfWorkoutsLabel" destination="Uae-9S-g9d" id="Qez-AL-4BZ"/>
+                        <outlet property="timeLabel" destination="jT2-K8-tmU" id="Xbg-40-VRj"/>
+                        <outlet property="workoutDescriptionLabel" destination="0aU-az-lZf" id="BgG-2C-f0m"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hSz-hB-kBt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -12,10 +12,18 @@ private let reuseIdentifier = "Exercises Preview Cell"
 
 class WorkoutDetailsViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var numberOfWorkoutsLabel: UILabel!
+    @IBOutlet weak var workoutDescriptionLabel: UILabel!
+    
     var workoutSelected: Workout = workoutOne
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        timeLabel.text = "\(workoutSelected.timeInMinutes)"
+        numberOfWorkoutsLabel.text = "\(workoutSelected.exercises.count)"
+        workoutDescriptionLabel.text = workoutSelected.description
 
     }
 
