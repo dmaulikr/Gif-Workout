@@ -49,15 +49,13 @@ class WorkoutDetailsViewController: UIViewController, UICollectionViewDataSource
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ExercisesPreviewCollectionViewCell
         
         cell.exercisesPreviewImageView.loadGif(name: "\(workoutSelected.exercises[indexPath.row].gifName)")
         
         cell.exercisesPreviewTextLabel.text = "\(workoutSelected.exercises[indexPath.row].title)"
-        
-//        cell.exercisesPreviewImageView.loadGif(name: "\(workouts[indexPath.row].exercises[indexPath.row].gifName)")
-//
-//        cell.exercisesPreviewTextLabel.text = "\(workouts[indexPath.row].exercises[indexPath.row].title)"
+
         
         return cell
     }

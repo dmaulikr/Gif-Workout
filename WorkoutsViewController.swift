@@ -39,7 +39,7 @@ class WorkoutsViewController: UIViewController, UICollectionViewDataSource, UICo
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        // Clear the backup button text for next view
+        // Clear the back button text for next view
         let backItem = UIBarButtonItem()
         backItem.title = ""
         navigationItem.backBarButtonItem = backItem
