@@ -182,57 +182,57 @@
                                         <rect key="frame" x="0.0" y="142" width="359" height="384"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Fli-RS-pWJ">
-                                            <size key="itemSize" width="150" height="100"/>
+                                            <size key="itemSize" width="150" height="103"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Exercises Preview Cell" id="r2d-Ku-Dm0" customClass="ExercisesPreviewCollectionViewCell" customModule="Gif_Workout" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="150" height="100"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="150" height="103"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="100"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="103"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gHS-F7-UvJ">
-                                                            <rect key="frame" x="0.0" y="0.0" width="150" height="100"/>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gHS-F7-UvJ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="150" height="103"/>
                                                         </imageView>
                                                         <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GxJ-te-Q0B">
-                                                            <rect key="frame" x="0.0" y="78" width="150" height="22"/>
+                                                            <rect key="frame" x="0.0" y="73" width="150" height="30"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ptK-6F-3ZY">
-                                                                <rect key="frame" x="0.0" y="0.0" width="150" height="22"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="150" height="30"/>
                                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEw-Af-QdG">
-                                                                        <rect key="frame" x="4" y="2" width="142" height="18"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                        <nil key="textColor"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rEw-Af-QdG">
+                                                                        <rect key="frame" x="4" y="2" width="142" height="26"/>
+                                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="trailing" secondItem="rEw-Af-QdG" secondAttribute="trailing" constant="4" id="7jl-wJ-p29"/>
-                                                                    <constraint firstItem="rEw-Af-QdG" firstAttribute="leading" secondItem="ptK-6F-3ZY" secondAttribute="leading" constant="4" id="XdT-F5-Tij"/>
-                                                                    <constraint firstItem="rEw-Af-QdG" firstAttribute="top" secondItem="ptK-6F-3ZY" secondAttribute="top" constant="2" id="Z6l-Ah-kGl"/>
-                                                                    <constraint firstAttribute="bottom" secondItem="rEw-Af-QdG" secondAttribute="bottom" constant="2" id="jiv-vd-Wag"/>
+                                                                    <constraint firstItem="rEw-Af-QdG" firstAttribute="leading" secondItem="ptK-6F-3ZY" secondAttribute="leading" constant="4" id="6uM-N0-XfL"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="rEw-Af-QdG" secondAttribute="bottom" constant="2" id="Cs1-JR-zch"/>
+                                                                    <constraint firstItem="rEw-Af-QdG" firstAttribute="top" secondItem="ptK-6F-3ZY" secondAttribute="top" constant="2" id="Q3H-xt-A97"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="rEw-Af-QdG" secondAttribute="trailing" constant="4" id="Zv8-ad-fZd"/>
                                                                 </constraints>
                                                             </view>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="22" id="Rd2-W6-eff"/>
+                                                                <constraint firstAttribute="height" constant="30" id="peA-JD-Qko"/>
                                                             </constraints>
                                                             <blurEffect style="light"/>
                                                         </visualEffectView>
                                                     </subviews>
                                                 </view>
                                                 <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="gHS-F7-UvJ" secondAttribute="trailing" id="FM1-ea-7rH"/>
-                                                    <constraint firstAttribute="bottom" secondItem="gHS-F7-UvJ" secondAttribute="bottom" id="J6n-jT-aTo"/>
-                                                    <constraint firstItem="GxJ-te-Q0B" firstAttribute="leading" secondItem="r2d-Ku-Dm0" secondAttribute="leading" id="SwH-C1-0KY"/>
-                                                    <constraint firstItem="gHS-F7-UvJ" firstAttribute="top" secondItem="r2d-Ku-Dm0" secondAttribute="top" id="mL0-uA-fiS"/>
-                                                    <constraint firstItem="gHS-F7-UvJ" firstAttribute="leading" secondItem="r2d-Ku-Dm0" secondAttribute="leading" id="n6i-RG-EW2"/>
-                                                    <constraint firstAttribute="bottom" secondItem="GxJ-te-Q0B" secondAttribute="bottom" id="w9s-4l-Jrs"/>
-                                                    <constraint firstAttribute="trailing" secondItem="GxJ-te-Q0B" secondAttribute="trailing" id="wxz-eh-beS"/>
+                                                    <constraint firstItem="GxJ-te-Q0B" firstAttribute="trailing" secondItem="gHS-F7-UvJ" secondAttribute="trailing" id="AdD-CG-DEV"/>
+                                                    <constraint firstItem="gHS-F7-UvJ" firstAttribute="leading" secondItem="r2d-Ku-Dm0" secondAttribute="leading" id="IkO-Lm-tIf"/>
+                                                    <constraint firstAttribute="trailing" secondItem="gHS-F7-UvJ" secondAttribute="trailing" id="jgz-zn-Pyg"/>
+                                                    <constraint firstItem="gHS-F7-UvJ" firstAttribute="top" secondItem="r2d-Ku-Dm0" secondAttribute="top" id="qoL-Jl-d0X"/>
+                                                    <constraint firstAttribute="bottom" secondItem="gHS-F7-UvJ" secondAttribute="bottom" id="t48-l4-rA0"/>
+                                                    <constraint firstAttribute="bottom" secondItem="GxJ-te-Q0B" secondAttribute="bottom" id="try-K3-eDO"/>
+                                                    <constraint firstItem="GxJ-te-Q0B" firstAttribute="leading" secondItem="gHS-F7-UvJ" secondAttribute="leading" id="zC0-t3-OaJ"/>
                                                 </constraints>
                                                 <connections>
                                                     <outlet property="exercisesPreviewImageView" destination="gHS-F7-UvJ" id="Tb4-x8-B2E"/>
@@ -259,7 +259,7 @@
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="20"/>
+                                                        <integer key="value" value="21"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </button>
