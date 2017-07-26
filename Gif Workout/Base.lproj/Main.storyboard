@@ -109,7 +109,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Jq1-6z-Veu">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Jq1-6z-Veu">
                                 <rect key="frame" x="8" y="72" width="359" height="587"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OGk-e0-RQ2">
@@ -170,7 +170,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lower Ab Workout. Best moves to target your core. Don't blame us if it hurts to laugh the next day." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0aU-az-lZf">
-                                        <rect key="frame" x="0.0" y="94" width="359" height="40"/>
+                                        <rect key="frame" x="0.0" y="96" width="359" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="X0c-h3-fKN"/>
                                         </constraints>
@@ -179,7 +179,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Izr-lp-Whn">
-                                        <rect key="frame" x="0.0" y="138" width="359" height="395"/>
+                                        <rect key="frame" x="0.0" y="142" width="359" height="384"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Fli-RS-pWJ">
                                             <size key="itemSize" width="150" height="150"/>
@@ -244,14 +244,38 @@
                                             <outlet property="delegate" destination="ZKg-XI-QvD" id="DTE-3l-hrp"/>
                                         </connections>
                                     </collectionView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwV-eY-tcu">
-                                        <rect key="frame" x="0.0" y="537" width="359" height="50"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gKc-9b-2bX">
+                                        <rect key="frame" x="0.0" y="532" width="359" height="55"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwV-eY-tcu">
+                                                <rect key="frame" x="94" y="5" width="170" height="45"/>
+                                                <color key="backgroundColor" red="0.20000000000000001" green="0.59999999999999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="170" id="fD8-Vm-vFG"/>
+                                                </constraints>
+                                                <state key="normal" title="START WORKOUT">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="WHf-CK-kHg"/>
+                                            <constraint firstItem="NwV-eY-tcu" firstAttribute="top" secondItem="gKc-9b-2bX" secondAttribute="top" constant="5" id="BP9-OL-xls"/>
+                                            <constraint firstItem="NwV-eY-tcu" firstAttribute="centerX" secondItem="gKc-9b-2bX" secondAttribute="centerX" id="Zof-Mn-WuJ"/>
+                                            <constraint firstAttribute="bottom" secondItem="NwV-eY-tcu" secondAttribute="bottom" constant="5" id="d61-rl-yHR"/>
+                                            <constraint firstItem="NwV-eY-tcu" firstAttribute="centerY" secondItem="gKc-9b-2bX" secondAttribute="centerY" id="dbt-KV-cE3"/>
+                                            <constraint firstAttribute="height" constant="55" id="joi-MZ-UuI"/>
                                         </constraints>
-                                        <state key="normal" title="START WORKOUT"/>
-                                    </button>
+                                    </view>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="gKc-9b-2bX" secondAttribute="bottom" id="JnM-9U-gf0"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
