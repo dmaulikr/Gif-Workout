@@ -28,21 +28,26 @@ class WorkoutsViewController: UIViewController, UICollectionViewDataSource, UICo
         
         cell.darkeningView.layer.opacity = 0.6
         
-//        cell.workoutImageBG.loadGif(name: "\(workouts[indexPath.row].mainImage)")
         cell.workoutImageBG.image = workouts[indexPath.row].mainImage
         cell.workoutNameLabel.text = workouts[indexPath.row].title.uppercased()
         
         return cell
     }
 
-    /*
+    
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "Show Workout Details" {
+            
+            let workoutDetailsViewController = segue.destination as! WorkoutDetailsViewController
+            let cell = sender as! WorkoutCollectionViewCell
+            let indexPath = workoutsCollectionView.indexPath(for: cell)
+            
+            workoutDetailsViewController.workoutSelected = workouts[indexPath!.row]
+            
+        }
     }
-    */
 
 }
