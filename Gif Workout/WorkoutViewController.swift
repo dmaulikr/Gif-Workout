@@ -16,9 +16,21 @@ class WorkoutViewController: UIViewController {
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var bottomTimerLabel: UILabel!
     
+    var workout: Workout = workoutOne
+    
+    let getReadyText = "Get Ready"
+    let breakText = "Break"
+    let exerciseCounter = 0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        exerciseTitleLabel.text = workout.exercises[exerciseCounter].title
+        exerciseImageView.loadGif(name: "\(workout.exercises[exerciseCounter].gifName)")
+        darkeningView.layer.opacity = 0.6
+        statusLabel.text = getReadyText.uppercased()
+        bottomTimerLabel.text = "0:69"
 
     }
 

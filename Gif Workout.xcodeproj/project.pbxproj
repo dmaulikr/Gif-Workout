@@ -94,12 +94,12 @@
 			children = (
 				157B529C1F2116C90087C0D5 /* AppDelegate.swift */,
 				157B52A01F2116C90087C0D5 /* Main.storyboard */,
-				15E6A57D1F2A97B500558AE3 /* WorkoutViewController.swift */,
 				157B52B81F2123F90087C0D5 /* Model */,
 				157B52B01F2121EB0087C0D5 /* WorkoutCollectionViewCell.swift */,
 				157B52AE1F2120A70087C0D5 /* WorkoutsViewController.swift */,
 				154925DA1F27D2EE0093853C /* ExercisesPreviewCollectionViewCell.swift */,
 				15AAAF3F1F269FBC000C8773 /* WorkoutDetailsViewController.swift */,
+				15E6A57D1F2A97B500558AE3 /* WorkoutViewController.swift */,
 				157B52A31F2116C90087C0D5 /* Assets.xcassets */,
 				157B52BE1F2124B60087C0D5 /* gifs */,
 				157B52A51F2116C90087C0D5 /* LaunchScreen.storyboard */,

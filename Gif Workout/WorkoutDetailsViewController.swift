@@ -60,14 +60,26 @@ class WorkoutDetailsViewController: UIViewController, UICollectionViewDataSource
         return cell
     }
     
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        // Clear the back button text for next view
+        let backItem = UIBarButtonItem()
+        backItem.title = ""
+        navigationItem.backBarButtonItem = backItem
+        
+        // Pass selected workout to next view
+        if segue.identifier == "Start Workout" {
+            
+            let workoutViewController = segue.destination as! WorkoutViewController
+//            let cell = sender as! WorkoutCollectionViewCell
+//            let indexPath = workoutsCollectionView.indexPath(for: cell)
+            
+            workoutViewController.workout = workoutSelected
+            
+        }
     }
-    */
+
 
 }

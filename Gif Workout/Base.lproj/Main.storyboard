@@ -263,7 +263,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
-                                                    <segue destination="zNX-nk-FKE" kind="show" id="T62-O8-ubW"/>
+                                                    <segue destination="zNX-nk-FKE" kind="show" identifier="Start Workout" id="T62-O8-ubW"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -300,10 +300,10 @@
             </objects>
             <point key="canvasLocation" x="1752.8" y="143.47826086956522"/>
         </scene>
-        <!--View Controller-->
+        <!--Workout View Controller-->
         <scene sceneID="7oS-Pb-Ltt">
             <objects>
-                <viewController id="zNX-nk-FKE" sceneMemberID="viewController">
+                <viewController id="zNX-nk-FKE" customClass="WorkoutViewController" customModule="Gif_Workout" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ab5-YS-DF4"/>
                         <viewControllerLayoutGuide type="bottom" id="A5f-Nm-9p6"/>
@@ -411,10 +411,17 @@
                             <constraint firstItem="A5f-Nm-9p6" firstAttribute="top" secondItem="ZSf-mx-OUe" secondAttribute="bottom" constant="8" id="Y7L-5v-AUp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bottomTimerLabel" destination="apm-zB-Jye" id="GP0-P0-k5L"/>
+                        <outlet property="darkeningView" destination="mBV-bL-wsq" id="wlA-cs-Nn5"/>
+                        <outlet property="exerciseImageView" destination="Ywk-zz-GsY" id="Fq3-oJ-uDW"/>
+                        <outlet property="exerciseTitleLabel" destination="1NB-h1-XK5" id="1dc-ty-SNz"/>
+                        <outlet property="statusLabel" destination="ebC-2M-3iR" id="8Nn-51-6em"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xO3-YV-1BU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2557.5999999999999" y="149.77511244377811"/>
+            <point key="canvasLocation" x="2558" y="139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RQu-m6-TxB">
